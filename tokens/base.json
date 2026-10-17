@@ -1,0 +1,737 @@
+{
+  "$description": "Thesis 2.0 primitives: colour, size and type. Designs and code use the semantic tokens in themes/, which point here.",
+  "color": {
+    "$description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+    "stone": {
+      "0": {
+        "$type": "color",
+        "$value": "#FFFFFF"
+      },
+      "25": {
+        "$type": "color",
+        "$value": "#F7F6F3"
+      },
+      "50": {
+        "$type": "color",
+        "$value": "#F0EEEA"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "#E4E1DB"
+      },
+      "200": {
+        "$type": "color",
+        "$value": "#D2CEC6"
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#8E948F"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#646B66"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#4A504C"
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#2A2F2C"
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#1C1F1D"
+      }
+    },
+    "night": {
+      "100": {
+        "$type": "color",
+        "$value": "#E9EDEA"
+      },
+      "200": {
+        "$type": "color",
+        "$value": "#BAC3BE"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#97A19B"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#3C4440"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#2E3531"
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#232926"
+      },
+      "850": {
+        "$type": "color",
+        "$value": "#1C211F"
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#161A18"
+      },
+      "950": {
+        "$type": "color",
+        "$value": "#101312"
+      }
+    },
+    "pine": {
+      "50": {
+        "$type": "color",
+        "$value": "#E6F0EC"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "#CFE3DA"
+      },
+      "250": {
+        "$type": "color",
+        "$value": "#9ED3C0"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#86C8B1"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#2F6F5E"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#285F50"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#204D41"
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#1D3A31"
+      },
+      "950": {
+        "$type": "color",
+        "$value": "#0E1F19"
+      }
+    },
+    "ochre": {
+      "50": {
+        "$type": "color",
+        "$value": "#F6ECDD"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#E3B670"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#8A5410"
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#3A2E1C"
+      }
+    },
+    "slate": {
+      "50": {
+        "$type": "color",
+        "$value": "#E7EDF3"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#A5BED9"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#3B5A7A"
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#1F2B37"
+      }
+    },
+    "brick": {
+      "50": {
+        "$type": "color",
+        "$value": "#F8E4E2"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#F2A49C"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#A8261D"
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#3D201E"
+      }
+    },
+    "dusk": {
+      "50": {
+        "$type": "color",
+        "$value": "#ECEAF4"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#B7B2DE"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#55507E"
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#27253A"
+      }
+    },
+    "clay": {
+      "50": {
+        "$type": "color",
+        "$value": "#F6E9E1"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#E6AE8F"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#8C4A2B"
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#3A251B"
+      }
+    },
+    "cream": {
+      "50": {
+        "$type": "color",
+        "$value": "#FFF8F0"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "#FCEEDF"
+      },
+      "200": {
+        "$type": "color",
+        "$value": "#F2DFCB"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#E5CDB3"
+      }
+    },
+    "cocoa": {
+      "600": {
+        "$type": "color",
+        "$value": "#765E50"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#5E4A3E"
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#2B1D16"
+      }
+    },
+    "terra": {
+      "50": {
+        "$type": "color",
+        "$value": "#FDE7DD"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#B8492A"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#9F3D21"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#86331B"
+      }
+    },
+    "leaf": {
+      "50": {
+        "$type": "color",
+        "$value": "#E2F3E6"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#25734A"
+      }
+    },
+    "sun": {
+      "50": {
+        "$type": "color",
+        "$value": "#FFF0D4"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#9A5B00"
+      }
+    },
+    "sky": {
+      "50": {
+        "$type": "color",
+        "$value": "#E2EEFB"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#25609E"
+      }
+    },
+    "berry": {
+      "50": {
+        "$type": "color",
+        "$value": "#F1E6FB"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#7543B0"
+      }
+    },
+    "coral": {
+      "50": {
+        "$type": "color",
+        "$value": "#FDE4E0"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#B1361F"
+      }
+    }
+  },
+  "size": {
+    "space": {
+      "1": {
+        "$type": "dimension",
+        "$value": "4px"
+      },
+      "2": {
+        "$type": "dimension",
+        "$value": "8px"
+      },
+      "3": {
+        "$type": "dimension",
+        "$value": "12px"
+      },
+      "4": {
+        "$type": "dimension",
+        "$value": "16px"
+      },
+      "5": {
+        "$type": "dimension",
+        "$value": "20px"
+      },
+      "6": {
+        "$type": "dimension",
+        "$value": "24px"
+      },
+      "8": {
+        "$type": "dimension",
+        "$value": "32px"
+      },
+      "10": {
+        "$type": "dimension",
+        "$value": "40px"
+      },
+      "12": {
+        "$type": "dimension",
+        "$value": "48px"
+      },
+      "$description": "Spacing on a 4 px base. Use for gaps and padding; 16 is the screen margin, 24 the gap between sections."
+    },
+    "radius": {
+      "$description": "Corner radius: sm for small controls, md for buttons and fields, lg for cards, xl for sheets, full for pills and the tab indicator.",
+      "sm": {
+        "$type": "dimension",
+        "$value": "8px"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "12px"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "16px"
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "24px"
+      },
+      "full": {
+        "$type": "dimension",
+        "$value": "999px"
+      }
+    }
+  },
+  "font": {
+    "family": {
+      "serif": {
+        "$type": "fontFamily",
+        "$value": [
+          "Newsreader",
+          "Georgia",
+          "serif"
+        ],
+        "$description": "Newsreader, for screen titles only (Display, Title, Heading)."
+      },
+      "sans": {
+        "$type": "fontFamily",
+        "$value": [
+          "Inter",
+          "system-ui",
+          "sans-serif"
+        ],
+        "$description": "Inter, for all interface text and every number."
+      }
+    },
+    "weight": {
+      "$description": "Font weights: regular for body text, medium for labels, semibold for emphasis and buttons.",
+      "regular": {
+        "$type": "fontWeight",
+        "$value": 400
+      },
+      "medium": {
+        "$type": "fontWeight",
+        "$value": 500
+      },
+      "semibold": {
+        "$type": "fontWeight",
+        "$value": 600
+      }
+    },
+    "size": {
+      "12": {
+        "$type": "dimension",
+        "$value": "12px"
+      },
+      "13": {
+        "$type": "dimension",
+        "$value": "13px"
+      },
+      "14": {
+        "$type": "dimension",
+        "$value": "14px"
+      },
+      "16": {
+        "$type": "dimension",
+        "$value": "16px"
+      },
+      "17": {
+        "$type": "dimension",
+        "$value": "17px"
+      },
+      "20": {
+        "$type": "dimension",
+        "$value": "20px"
+      },
+      "22": {
+        "$type": "dimension",
+        "$value": "22px"
+      },
+      "28": {
+        "$type": "dimension",
+        "$value": "28px"
+      },
+      "32": {
+        "$type": "dimension",
+        "$value": "32px"
+      },
+      "34": {
+        "$type": "dimension",
+        "$value": "34px"
+      },
+      "$description": "The type scale in px. Use it through a text style, not on its own. Body text is 16; nothing is smaller than 12."
+    },
+    "line-height": {
+      "16": {
+        "$type": "dimension",
+        "$value": "16px"
+      },
+      "18": {
+        "$type": "dimension",
+        "$value": "18px"
+      },
+      "20": {
+        "$type": "dimension",
+        "$value": "20px"
+      },
+      "24": {
+        "$type": "dimension",
+        "$value": "24px"
+      },
+      "28": {
+        "$type": "dimension",
+        "$value": "28px"
+      },
+      "34": {
+        "$type": "dimension",
+        "$value": "34px"
+      },
+      "36": {
+        "$type": "dimension",
+        "$value": "36px"
+      },
+      "40": {
+        "$type": "dimension",
+        "$value": "40px"
+      },
+      "$description": "Line heights in px, paired with font.size in each text style."
+    }
+  },
+  "typography": {
+    "$description": "Text styles. Every text layer uses one of these.",
+    "display": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.serif}",
+        "fontWeight": "{font.weight.medium}",
+        "fontSize": "{font.size.34}",
+        "lineHeight": "{font.line-height.40}",
+        "letterSpacing": "-0.005em"
+      },
+      "$extensions": {
+        "figma": {
+          "name": "Display"
+        }
+      },
+      "$description": "Use once per tab root for the screen greeting or title, such as Good afternoon."
+    },
+    "title": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.serif}",
+        "fontWeight": "{font.weight.medium}",
+        "fontSize": "{font.size.28}",
+        "lineHeight": "{font.line-height.34}",
+        "letterSpacing": "-0.003em"
+      },
+      "$extensions": {
+        "figma": {
+          "name": "Title"
+        }
+      },
+      "$description": "Use for the main heading of a screen, below the top bar."
+    },
+    "heading": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.serif}",
+        "fontWeight": "{font.weight.medium}",
+        "fontSize": "{font.size.22}",
+        "lineHeight": "{font.line-height.28}",
+        "letterSpacing": "0em"
+      },
+      "$extensions": {
+        "figma": {
+          "name": "Heading"
+        }
+      },
+      "$description": "Use for card titles that lead a story, such as a mode name or a week."
+    },
+    "subheading": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": "{font.weight.semibold}",
+        "fontSize": "{font.size.17}",
+        "lineHeight": "{font.line-height.24}",
+        "letterSpacing": "-0.002em"
+      },
+      "$extensions": {
+        "figma": {
+          "name": "Subheading"
+        }
+      },
+      "$description": "Use for section headings and card titles."
+    },
+    "body": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": "{font.weight.regular}",
+        "fontSize": "{font.size.16}",
+        "lineHeight": "{font.line-height.24}",
+        "letterSpacing": "0em"
+      },
+      "$extensions": {
+        "figma": {
+          "name": "Body"
+        }
+      },
+      "$description": "Use for running text. The default for any paragraph."
+    },
+    "body-strong": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": "{font.weight.semibold}",
+        "fontSize": "{font.size.16}",
+        "lineHeight": "{font.line-height.24}",
+        "letterSpacing": "0em"
+      },
+      "$extensions": {
+        "figma": {
+          "name": "Body strong"
+        }
+      },
+      "$description": "Use for list titles and emphasised lines in body text."
+    },
+    "body-small": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": "{font.weight.regular}",
+        "fontSize": "{font.size.14}",
+        "lineHeight": "{font.line-height.20}",
+        "letterSpacing": "0em"
+      },
+      "$extensions": {
+        "figma": {
+          "name": "Body small"
+        }
+      },
+      "$description": "Use for supporting text in cards and lists."
+    },
+    "label": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": "{font.weight.medium}",
+        "fontSize": "{font.size.14}",
+        "lineHeight": "{font.line-height.20}",
+        "letterSpacing": "0em"
+      },
+      "$extensions": {
+        "figma": {
+          "name": "Label"
+        }
+      },
+      "$description": "Use for form labels, chips and segmented controls."
+    },
+    "caption": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": "{font.weight.regular}",
+        "fontSize": "{font.size.13}",
+        "lineHeight": "{font.line-height.18}",
+        "letterSpacing": "0em"
+      },
+      "$extensions": {
+        "figma": {
+          "name": "Caption"
+        }
+      },
+      "$description": "Use for hints, helper text and metadata."
+    },
+    "caption-strong": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": "{font.weight.semibold}",
+        "fontSize": "{font.size.13}",
+        "lineHeight": "{font.line-height.18}",
+        "letterSpacing": "0em"
+      },
+      "$extensions": {
+        "figma": {
+          "name": "Caption strong"
+        }
+      },
+      "$description": "Use for small status text, such as step counters and badges."
+    },
+    "overline": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": "{font.weight.semibold}",
+        "fontSize": "{font.size.12}",
+        "lineHeight": "{font.line-height.16}",
+        "letterSpacing": "0.04em",
+        "textCase": "uppercase"
+      },
+      "$extensions": {
+        "figma": {
+          "name": "Overline"
+        }
+      },
+      "$description": "Use for short uppercase labels above a group, such as Input and Rule. Avoid for more than two words."
+    },
+    "number-l": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": "{font.weight.semibold}",
+        "fontSize": "{font.size.32}",
+        "lineHeight": "{font.line-height.36}",
+        "letterSpacing": "-0.01em"
+      },
+      "$extensions": {
+        "figma": {
+          "name": "Number L"
+        }
+      },
+      "$description": "Use for a single headline number."
+    },
+    "number-m": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": "{font.weight.semibold}",
+        "fontSize": "{font.size.20}",
+        "lineHeight": "{font.line-height.24}",
+        "letterSpacing": "-0.005em"
+      },
+      "$extensions": {
+        "figma": {
+          "name": "Number M"
+        }
+      },
+      "$description": "Use for numbers in stat tiles and range bars."
+    },
+    "button": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": "{font.weight.semibold}",
+        "fontSize": "{font.size.16}",
+        "lineHeight": "{font.line-height.20}",
+        "letterSpacing": "0em"
+      },
+      "$extensions": {
+        "figma": {
+          "name": "Button"
+        }
+      },
+      "$description": "Use for button labels only."
+    },
+    "tab": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": "{font.weight.medium}",
+        "fontSize": "{font.size.12}",
+        "lineHeight": "{font.line-height.16}",
+        "letterSpacing": "0em"
+      },
+      "$extensions": {
+        "figma": {
+          "name": "Tab"
+        }
+      },
+      "$description": "Use for tab bar labels only."
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "thesis-design-system",
+  "private": true,
+  "type": "module",
+  "description": "Thesis 2.0 design tokens: one DTCG source for Figma and code",
+  "scripts": {
+    "tokens:build": "node tokens/scripts/build.mjs",
+    "tokens:check": "node tokens/scripts/check.mjs"
+  }
+}

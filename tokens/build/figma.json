@@ -1,0 +1,2063 @@
+{
+ "collections": [
+  {
+   "name": "2.0 · Primitives · Colour",
+   "modes": [
+    "Value"
+   ],
+   "vars": [
+    {
+     "name": "color/stone/0",
+     "type": "COLOR",
+     "values": {
+      "Value": "#FFFFFF"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-stone-0"
+    },
+    {
+     "name": "color/stone/25",
+     "type": "COLOR",
+     "values": {
+      "Value": "#F7F6F3"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-stone-25"
+    },
+    {
+     "name": "color/stone/50",
+     "type": "COLOR",
+     "values": {
+      "Value": "#F0EEEA"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-stone-50"
+    },
+    {
+     "name": "color/stone/100",
+     "type": "COLOR",
+     "values": {
+      "Value": "#E4E1DB"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-stone-100"
+    },
+    {
+     "name": "color/stone/200",
+     "type": "COLOR",
+     "values": {
+      "Value": "#D2CEC6"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-stone-200"
+    },
+    {
+     "name": "color/stone/400",
+     "type": "COLOR",
+     "values": {
+      "Value": "#8E948F"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-stone-400"
+    },
+    {
+     "name": "color/stone/500",
+     "type": "COLOR",
+     "values": {
+      "Value": "#646B66"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-stone-500"
+    },
+    {
+     "name": "color/stone/600",
+     "type": "COLOR",
+     "values": {
+      "Value": "#4A504C"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-stone-600"
+    },
+    {
+     "name": "color/stone/800",
+     "type": "COLOR",
+     "values": {
+      "Value": "#2A2F2C"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-stone-800"
+    },
+    {
+     "name": "color/stone/900",
+     "type": "COLOR",
+     "values": {
+      "Value": "#1C1F1D"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-stone-900"
+    },
+    {
+     "name": "color/night/100",
+     "type": "COLOR",
+     "values": {
+      "Value": "#E9EDEA"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-night-100"
+    },
+    {
+     "name": "color/night/200",
+     "type": "COLOR",
+     "values": {
+      "Value": "#BAC3BE"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-night-200"
+    },
+    {
+     "name": "color/night/300",
+     "type": "COLOR",
+     "values": {
+      "Value": "#97A19B"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-night-300"
+    },
+    {
+     "name": "color/night/600",
+     "type": "COLOR",
+     "values": {
+      "Value": "#3C4440"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-night-600"
+    },
+    {
+     "name": "color/night/700",
+     "type": "COLOR",
+     "values": {
+      "Value": "#2E3531"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-night-700"
+    },
+    {
+     "name": "color/night/800",
+     "type": "COLOR",
+     "values": {
+      "Value": "#232926"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-night-800"
+    },
+    {
+     "name": "color/night/850",
+     "type": "COLOR",
+     "values": {
+      "Value": "#1C211F"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-night-850"
+    },
+    {
+     "name": "color/night/900",
+     "type": "COLOR",
+     "values": {
+      "Value": "#161A18"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-night-900"
+    },
+    {
+     "name": "color/night/950",
+     "type": "COLOR",
+     "values": {
+      "Value": "#101312"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-night-950"
+    },
+    {
+     "name": "color/pine/50",
+     "type": "COLOR",
+     "values": {
+      "Value": "#E6F0EC"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-pine-50"
+    },
+    {
+     "name": "color/pine/100",
+     "type": "COLOR",
+     "values": {
+      "Value": "#CFE3DA"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-pine-100"
+    },
+    {
+     "name": "color/pine/250",
+     "type": "COLOR",
+     "values": {
+      "Value": "#9ED3C0"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-pine-250"
+    },
+    {
+     "name": "color/pine/300",
+     "type": "COLOR",
+     "values": {
+      "Value": "#86C8B1"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-pine-300"
+    },
+    {
+     "name": "color/pine/500",
+     "type": "COLOR",
+     "values": {
+      "Value": "#2F6F5E"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-pine-500"
+    },
+    {
+     "name": "color/pine/600",
+     "type": "COLOR",
+     "values": {
+      "Value": "#285F50"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-pine-600"
+    },
+    {
+     "name": "color/pine/700",
+     "type": "COLOR",
+     "values": {
+      "Value": "#204D41"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-pine-700"
+    },
+    {
+     "name": "color/pine/900",
+     "type": "COLOR",
+     "values": {
+      "Value": "#1D3A31"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-pine-900"
+    },
+    {
+     "name": "color/pine/950",
+     "type": "COLOR",
+     "values": {
+      "Value": "#0E1F19"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-pine-950"
+    },
+    {
+     "name": "color/ochre/50",
+     "type": "COLOR",
+     "values": {
+      "Value": "#F6ECDD"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-ochre-50"
+    },
+    {
+     "name": "color/ochre/300",
+     "type": "COLOR",
+     "values": {
+      "Value": "#E3B670"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-ochre-300"
+    },
+    {
+     "name": "color/ochre/700",
+     "type": "COLOR",
+     "values": {
+      "Value": "#8A5410"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-ochre-700"
+    },
+    {
+     "name": "color/ochre/900",
+     "type": "COLOR",
+     "values": {
+      "Value": "#3A2E1C"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-ochre-900"
+    },
+    {
+     "name": "color/slate/50",
+     "type": "COLOR",
+     "values": {
+      "Value": "#E7EDF3"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-slate-50"
+    },
+    {
+     "name": "color/slate/300",
+     "type": "COLOR",
+     "values": {
+      "Value": "#A5BED9"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-slate-300"
+    },
+    {
+     "name": "color/slate/700",
+     "type": "COLOR",
+     "values": {
+      "Value": "#3B5A7A"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-slate-700"
+    },
+    {
+     "name": "color/slate/900",
+     "type": "COLOR",
+     "values": {
+      "Value": "#1F2B37"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-slate-900"
+    },
+    {
+     "name": "color/brick/50",
+     "type": "COLOR",
+     "values": {
+      "Value": "#F8E4E2"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-brick-50"
+    },
+    {
+     "name": "color/brick/300",
+     "type": "COLOR",
+     "values": {
+      "Value": "#F2A49C"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-brick-300"
+    },
+    {
+     "name": "color/brick/700",
+     "type": "COLOR",
+     "values": {
+      "Value": "#A8261D"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-brick-700"
+    },
+    {
+     "name": "color/brick/900",
+     "type": "COLOR",
+     "values": {
+      "Value": "#3D201E"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-brick-900"
+    },
+    {
+     "name": "color/dusk/50",
+     "type": "COLOR",
+     "values": {
+      "Value": "#ECEAF4"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-dusk-50"
+    },
+    {
+     "name": "color/dusk/300",
+     "type": "COLOR",
+     "values": {
+      "Value": "#B7B2DE"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-dusk-300"
+    },
+    {
+     "name": "color/dusk/700",
+     "type": "COLOR",
+     "values": {
+      "Value": "#55507E"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-dusk-700"
+    },
+    {
+     "name": "color/dusk/900",
+     "type": "COLOR",
+     "values": {
+      "Value": "#27253A"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-dusk-900"
+    },
+    {
+     "name": "color/clay/50",
+     "type": "COLOR",
+     "values": {
+      "Value": "#F6E9E1"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-clay-50"
+    },
+    {
+     "name": "color/clay/300",
+     "type": "COLOR",
+     "values": {
+      "Value": "#E6AE8F"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-clay-300"
+    },
+    {
+     "name": "color/clay/700",
+     "type": "COLOR",
+     "values": {
+      "Value": "#8C4A2B"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-clay-700"
+    },
+    {
+     "name": "color/clay/900",
+     "type": "COLOR",
+     "values": {
+      "Value": "#3A251B"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-clay-900"
+    },
+    {
+     "name": "color/cream/50",
+     "type": "COLOR",
+     "values": {
+      "Value": "#FFF8F0"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-cream-50"
+    },
+    {
+     "name": "color/cream/100",
+     "type": "COLOR",
+     "values": {
+      "Value": "#FCEEDF"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-cream-100"
+    },
+    {
+     "name": "color/cream/200",
+     "type": "COLOR",
+     "values": {
+      "Value": "#F2DFCB"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-cream-200"
+    },
+    {
+     "name": "color/cream/300",
+     "type": "COLOR",
+     "values": {
+      "Value": "#E5CDB3"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-cream-300"
+    },
+    {
+     "name": "color/cocoa/600",
+     "type": "COLOR",
+     "values": {
+      "Value": "#765E50"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-cocoa-600"
+    },
+    {
+     "name": "color/cocoa/700",
+     "type": "COLOR",
+     "values": {
+      "Value": "#5E4A3E"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-cocoa-700"
+    },
+    {
+     "name": "color/cocoa/900",
+     "type": "COLOR",
+     "values": {
+      "Value": "#2B1D16"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-cocoa-900"
+    },
+    {
+     "name": "color/terra/50",
+     "type": "COLOR",
+     "values": {
+      "Value": "#FDE7DD"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-terra-50"
+    },
+    {
+     "name": "color/terra/500",
+     "type": "COLOR",
+     "values": {
+      "Value": "#B8492A"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-terra-500"
+    },
+    {
+     "name": "color/terra/600",
+     "type": "COLOR",
+     "values": {
+      "Value": "#9F3D21"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-terra-600"
+    },
+    {
+     "name": "color/terra/700",
+     "type": "COLOR",
+     "values": {
+      "Value": "#86331B"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-terra-700"
+    },
+    {
+     "name": "color/leaf/50",
+     "type": "COLOR",
+     "values": {
+      "Value": "#E2F3E6"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-leaf-50"
+    },
+    {
+     "name": "color/leaf/700",
+     "type": "COLOR",
+     "values": {
+      "Value": "#25734A"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-leaf-700"
+    },
+    {
+     "name": "color/sun/50",
+     "type": "COLOR",
+     "values": {
+      "Value": "#FFF0D4"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-sun-50"
+    },
+    {
+     "name": "color/sun/700",
+     "type": "COLOR",
+     "values": {
+      "Value": "#9A5B00"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-sun-700"
+    },
+    {
+     "name": "color/sky/50",
+     "type": "COLOR",
+     "values": {
+      "Value": "#E2EEFB"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-sky-50"
+    },
+    {
+     "name": "color/sky/700",
+     "type": "COLOR",
+     "values": {
+      "Value": "#25609E"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-sky-700"
+    },
+    {
+     "name": "color/berry/50",
+     "type": "COLOR",
+     "values": {
+      "Value": "#F1E6FB"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-berry-50"
+    },
+    {
+     "name": "color/berry/700",
+     "type": "COLOR",
+     "values": {
+      "Value": "#7543B0"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-berry-700"
+    },
+    {
+     "name": "color/coral/50",
+     "type": "COLOR",
+     "values": {
+      "Value": "#FDE4E0"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-coral-50"
+    },
+    {
+     "name": "color/coral/700",
+     "type": "COLOR",
+     "values": {
+      "Value": "#B1361F"
+     },
+     "description": "Primitive colours. Do not use them directly in designs or code: use a semantic color/* token from the theme, which points here.",
+     "codeSyntax": "--color-coral-700"
+    }
+   ],
+   "scopes": null,
+   "cssPrefix": ""
+  },
+  {
+   "name": "2.0 · Primitives · Size",
+   "modes": [
+    "Default"
+   ],
+   "vars": [
+    {
+     "name": "size/space/1",
+     "type": "FLOAT",
+     "values": {
+      "Default": 4
+     },
+     "description": "Spacing on a 4 px base. Use for gaps and padding; 16 is the screen margin, 24 the gap between sections.",
+     "codeSyntax": "--size-space-1"
+    },
+    {
+     "name": "size/space/2",
+     "type": "FLOAT",
+     "values": {
+      "Default": 8
+     },
+     "description": "Spacing on a 4 px base. Use for gaps and padding; 16 is the screen margin, 24 the gap between sections.",
+     "codeSyntax": "--size-space-2"
+    },
+    {
+     "name": "size/space/3",
+     "type": "FLOAT",
+     "values": {
+      "Default": 12
+     },
+     "description": "Spacing on a 4 px base. Use for gaps and padding; 16 is the screen margin, 24 the gap between sections.",
+     "codeSyntax": "--size-space-3"
+    },
+    {
+     "name": "size/space/4",
+     "type": "FLOAT",
+     "values": {
+      "Default": 16
+     },
+     "description": "Spacing on a 4 px base. Use for gaps and padding; 16 is the screen margin, 24 the gap between sections.",
+     "codeSyntax": "--size-space-4"
+    },
+    {
+     "name": "size/space/5",
+     "type": "FLOAT",
+     "values": {
+      "Default": 20
+     },
+     "description": "Spacing on a 4 px base. Use for gaps and padding; 16 is the screen margin, 24 the gap between sections.",
+     "codeSyntax": "--size-space-5"
+    },
+    {
+     "name": "size/space/6",
+     "type": "FLOAT",
+     "values": {
+      "Default": 24
+     },
+     "description": "Spacing on a 4 px base. Use for gaps and padding; 16 is the screen margin, 24 the gap between sections.",
+     "codeSyntax": "--size-space-6"
+    },
+    {
+     "name": "size/space/8",
+     "type": "FLOAT",
+     "values": {
+      "Default": 32
+     },
+     "description": "Spacing on a 4 px base. Use for gaps and padding; 16 is the screen margin, 24 the gap between sections.",
+     "codeSyntax": "--size-space-8"
+    },
+    {
+     "name": "size/space/10",
+     "type": "FLOAT",
+     "values": {
+      "Default": 40
+     },
+     "description": "Spacing on a 4 px base. Use for gaps and padding; 16 is the screen margin, 24 the gap between sections.",
+     "codeSyntax": "--size-space-10"
+    },
+    {
+     "name": "size/space/12",
+     "type": "FLOAT",
+     "values": {
+      "Default": 48
+     },
+     "description": "Spacing on a 4 px base. Use for gaps and padding; 16 is the screen margin, 24 the gap between sections.",
+     "codeSyntax": "--size-space-12"
+    },
+    {
+     "name": "size/radius/sm",
+     "type": "FLOAT",
+     "values": {
+      "Default": 8
+     },
+     "description": "Corner radius: sm for small controls, md for buttons and fields, lg for cards, xl for sheets, full for pills and the tab indicator.",
+     "codeSyntax": "--size-radius-sm"
+    },
+    {
+     "name": "size/radius/md",
+     "type": "FLOAT",
+     "values": {
+      "Default": 12
+     },
+     "description": "Corner radius: sm for small controls, md for buttons and fields, lg for cards, xl for sheets, full for pills and the tab indicator.",
+     "codeSyntax": "--size-radius-md"
+    },
+    {
+     "name": "size/radius/lg",
+     "type": "FLOAT",
+     "values": {
+      "Default": 16
+     },
+     "description": "Corner radius: sm for small controls, md for buttons and fields, lg for cards, xl for sheets, full for pills and the tab indicator.",
+     "codeSyntax": "--size-radius-lg"
+    },
+    {
+     "name": "size/radius/xl",
+     "type": "FLOAT",
+     "values": {
+      "Default": 24
+     },
+     "description": "Corner radius: sm for small controls, md for buttons and fields, lg for cards, xl for sheets, full for pills and the tab indicator.",
+     "codeSyntax": "--size-radius-xl"
+    },
+    {
+     "name": "size/radius/full",
+     "type": "FLOAT",
+     "values": {
+      "Default": 999
+     },
+     "description": "Corner radius: sm for small controls, md for buttons and fields, lg for cards, xl for sheets, full for pills and the tab indicator.",
+     "codeSyntax": "--size-radius-full"
+    }
+   ],
+   "scopes": null,
+   "cssPrefix": ""
+  },
+  {
+   "name": "2.0 · Primitives · Type",
+   "modes": [
+    "Default"
+   ],
+   "vars": [
+    {
+     "name": "font/family/serif",
+     "type": "STRING",
+     "values": {
+      "Default": "Newsreader"
+     },
+     "description": "Newsreader, for screen titles only (Display, Title, Heading).",
+     "codeSyntax": "--font-family-serif"
+    },
+    {
+     "name": "font/family/sans",
+     "type": "STRING",
+     "values": {
+      "Default": "Inter"
+     },
+     "description": "Inter, for all interface text and every number.",
+     "codeSyntax": "--font-family-sans"
+    },
+    {
+     "name": "font/weight/regular",
+     "type": "FLOAT",
+     "values": {
+      "Default": 400
+     },
+     "description": "Font weights: regular for body text, medium for labels, semibold for emphasis and buttons.",
+     "codeSyntax": "--font-weight-regular"
+    },
+    {
+     "name": "font/weight/medium",
+     "type": "FLOAT",
+     "values": {
+      "Default": 500
+     },
+     "description": "Font weights: regular for body text, medium for labels, semibold for emphasis and buttons.",
+     "codeSyntax": "--font-weight-medium"
+    },
+    {
+     "name": "font/weight/semibold",
+     "type": "FLOAT",
+     "values": {
+      "Default": 600
+     },
+     "description": "Font weights: regular for body text, medium for labels, semibold for emphasis and buttons.",
+     "codeSyntax": "--font-weight-semibold"
+    },
+    {
+     "name": "font/size/12",
+     "type": "FLOAT",
+     "values": {
+      "Default": 12
+     },
+     "description": "The type scale in px. Use it through a text style, not on its own. Body text is 16; nothing is smaller than 12.",
+     "codeSyntax": "--font-size-12"
+    },
+    {
+     "name": "font/size/13",
+     "type": "FLOAT",
+     "values": {
+      "Default": 13
+     },
+     "description": "The type scale in px. Use it through a text style, not on its own. Body text is 16; nothing is smaller than 12.",
+     "codeSyntax": "--font-size-13"
+    },
+    {
+     "name": "font/size/14",
+     "type": "FLOAT",
+     "values": {
+      "Default": 14
+     },
+     "description": "The type scale in px. Use it through a text style, not on its own. Body text is 16; nothing is smaller than 12.",
+     "codeSyntax": "--font-size-14"
+    },
+    {
+     "name": "font/size/16",
+     "type": "FLOAT",
+     "values": {
+      "Default": 16
+     },
+     "description": "The type scale in px. Use it through a text style, not on its own. Body text is 16; nothing is smaller than 12.",
+     "codeSyntax": "--font-size-16"
+    },
+    {
+     "name": "font/size/17",
+     "type": "FLOAT",
+     "values": {
+      "Default": 17
+     },
+     "description": "The type scale in px. Use it through a text style, not on its own. Body text is 16; nothing is smaller than 12.",
+     "codeSyntax": "--font-size-17"
+    },
+    {
+     "name": "font/size/20",
+     "type": "FLOAT",
+     "values": {
+      "Default": 20
+     },
+     "description": "The type scale in px. Use it through a text style, not on its own. Body text is 16; nothing is smaller than 12.",
+     "codeSyntax": "--font-size-20"
+    },
+    {
+     "name": "font/size/22",
+     "type": "FLOAT",
+     "values": {
+      "Default": 22
+     },
+     "description": "The type scale in px. Use it through a text style, not on its own. Body text is 16; nothing is smaller than 12.",
+     "codeSyntax": "--font-size-22"
+    },
+    {
+     "name": "font/size/28",
+     "type": "FLOAT",
+     "values": {
+      "Default": 28
+     },
+     "description": "The type scale in px. Use it through a text style, not on its own. Body text is 16; nothing is smaller than 12.",
+     "codeSyntax": "--font-size-28"
+    },
+    {
+     "name": "font/size/32",
+     "type": "FLOAT",
+     "values": {
+      "Default": 32
+     },
+     "description": "The type scale in px. Use it through a text style, not on its own. Body text is 16; nothing is smaller than 12.",
+     "codeSyntax": "--font-size-32"
+    },
+    {
+     "name": "font/size/34",
+     "type": "FLOAT",
+     "values": {
+      "Default": 34
+     },
+     "description": "The type scale in px. Use it through a text style, not on its own. Body text is 16; nothing is smaller than 12.",
+     "codeSyntax": "--font-size-34"
+    },
+    {
+     "name": "font/line-height/16",
+     "type": "FLOAT",
+     "values": {
+      "Default": 16
+     },
+     "description": "Line heights in px, paired with font.size in each text style.",
+     "codeSyntax": "--font-line-height-16"
+    },
+    {
+     "name": "font/line-height/18",
+     "type": "FLOAT",
+     "values": {
+      "Default": 18
+     },
+     "description": "Line heights in px, paired with font.size in each text style.",
+     "codeSyntax": "--font-line-height-18"
+    },
+    {
+     "name": "font/line-height/20",
+     "type": "FLOAT",
+     "values": {
+      "Default": 20
+     },
+     "description": "Line heights in px, paired with font.size in each text style.",
+     "codeSyntax": "--font-line-height-20"
+    },
+    {
+     "name": "font/line-height/24",
+     "type": "FLOAT",
+     "values": {
+      "Default": 24
+     },
+     "description": "Line heights in px, paired with font.size in each text style.",
+     "codeSyntax": "--font-line-height-24"
+    },
+    {
+     "name": "font/line-height/28",
+     "type": "FLOAT",
+     "values": {
+      "Default": 28
+     },
+     "description": "Line heights in px, paired with font.size in each text style.",
+     "codeSyntax": "--font-line-height-28"
+    },
+    {
+     "name": "font/line-height/34",
+     "type": "FLOAT",
+     "values": {
+      "Default": 34
+     },
+     "description": "Line heights in px, paired with font.size in each text style.",
+     "codeSyntax": "--font-line-height-34"
+    },
+    {
+     "name": "font/line-height/36",
+     "type": "FLOAT",
+     "values": {
+      "Default": 36
+     },
+     "description": "Line heights in px, paired with font.size in each text style.",
+     "codeSyntax": "--font-line-height-36"
+    },
+    {
+     "name": "font/line-height/40",
+     "type": "FLOAT",
+     "values": {
+      "Default": 40
+     },
+     "description": "Line heights in px, paired with font.size in each text style.",
+     "codeSyntax": "--font-line-height-40"
+    }
+   ],
+   "scopes": null,
+   "cssPrefix": ""
+  },
+  {
+   "name": "2.0 · Theme",
+   "modes": [
+    "Calm light",
+    "Calm dark",
+    "Warm"
+   ],
+   "vars": [
+    {
+     "name": "color/bg/canvas",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/stone/25"
+      },
+      "Calm dark": {
+       "alias": "color/night/950"
+      },
+      "Warm": {
+       "alias": "color/cream/50"
+      }
+     },
+     "description": "Screen background, the base layer behind everything.",
+     "codeSyntax": "--color-bg-canvas"
+    },
+    {
+     "name": "color/bg/surface",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/stone/0"
+      },
+      "Calm dark": {
+       "alias": "color/night/900"
+      },
+      "Warm": {
+       "alias": "color/stone/0"
+      }
+     },
+     "description": "Cards, sheets and inputs that sit on the canvas.",
+     "codeSyntax": "--color-bg-surface"
+    },
+    {
+     "name": "color/bg/surface-raised",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/stone/0"
+      },
+      "Calm dark": {
+       "alias": "color/night/850"
+      },
+      "Warm": {
+       "alias": "color/stone/0"
+      }
+     },
+     "description": "Popovers and overlays that sit above surfaces.",
+     "codeSyntax": "--color-bg-surface-raised"
+    },
+    {
+     "name": "color/bg/sunken",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/stone/50"
+      },
+      "Calm dark": {
+       "alias": "color/night/800"
+      },
+      "Warm": {
+       "alias": "color/cream/100"
+      }
+     },
+     "description": "Tracks, wells and quiet panels set into a surface.",
+     "codeSyntax": "--color-bg-sunken"
+    },
+    {
+     "name": "color/bg/inverse",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/stone/900"
+      },
+      "Calm dark": {
+       "alias": "color/night/100"
+      },
+      "Warm": {
+       "alias": "color/cocoa/900"
+      }
+     },
+     "description": "Rare high-contrast surfaces. Pair with text/inverse.",
+     "codeSyntax": "--color-bg-inverse"
+    },
+    {
+     "name": "color/bg/feature",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/pine/50"
+      },
+      "Calm dark": {
+       "alias": "color/pine/900"
+      },
+      "Warm": {
+       "alias": "color/terra/500"
+      }
+     },
+     "description": "One highlighted card per screen, such as the recommended mode or the care prompt. Pair with text/on-feature.",
+     "codeSyntax": "--color-bg-feature"
+    },
+    {
+     "name": "color/border/subtle",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/stone/100"
+      },
+      "Calm dark": {
+       "alias": "color/night/700"
+      },
+      "Warm": {
+       "alias": "color/cream/200"
+      }
+     },
+     "description": "Card edges and dividers. Decorative only, not for controls.",
+     "codeSyntax": "--color-border-subtle"
+    },
+    {
+     "name": "color/border/strong",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/stone/200"
+      },
+      "Calm dark": {
+       "alias": "color/night/600"
+      },
+      "Warm": {
+       "alias": "color/cream/300"
+      }
+     },
+     "description": "Edges of controls that must be seen, such as unselected radios, fields and secondary buttons.",
+     "codeSyntax": "--color-border-strong"
+    },
+    {
+     "name": "color/text/primary",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/stone/900"
+      },
+      "Calm dark": {
+       "alias": "color/night/100"
+      },
+      "Warm": {
+       "alias": "color/cocoa/900"
+      }
+     },
+     "description": "Headings and body text.",
+     "codeSyntax": "--color-text-primary"
+    },
+    {
+     "name": "color/text/secondary",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/stone/600"
+      },
+      "Calm dark": {
+       "alias": "color/night/200"
+      },
+      "Warm": {
+       "alias": "color/cocoa/700"
+      }
+     },
+     "description": "Supporting text and descriptions.",
+     "codeSyntax": "--color-text-secondary"
+    },
+    {
+     "name": "color/text/tertiary",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/stone/500"
+      },
+      "Calm dark": {
+       "alias": "color/night/300"
+      },
+      "Warm": {
+       "alias": "color/cocoa/600"
+      }
+     },
+     "description": "Placeholders, hints and metadata. Still passes 4.5:1.",
+     "codeSyntax": "--color-text-tertiary"
+    },
+    {
+     "name": "color/text/inverse",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/stone/0"
+      },
+      "Calm dark": {
+       "alias": "color/night/950"
+      },
+      "Warm": {
+       "alias": "color/stone/0"
+      }
+     },
+     "description": "Text on bg/inverse.",
+     "codeSyntax": "--color-text-inverse"
+    },
+    {
+     "name": "color/text/on-feature",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/stone/900"
+      },
+      "Calm dark": {
+       "alias": "color/night/100"
+      },
+      "Warm": {
+       "alias": "color/stone/0"
+      }
+     },
+     "description": "Text on bg/feature.",
+     "codeSyntax": "--color-text-on-feature"
+    },
+    {
+     "name": "color/text/on-feature-muted",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/stone/600"
+      },
+      "Calm dark": {
+       "alias": "color/night/200"
+      },
+      "Warm": {
+       "alias": "color/cream/100"
+      }
+     },
+     "description": "Secondary text on bg/feature.",
+     "codeSyntax": "--color-text-on-feature-muted"
+    },
+    {
+     "name": "color/accent/default",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/pine/500"
+      },
+      "Calm dark": {
+       "alias": "color/pine/300"
+      },
+      "Warm": {
+       "alias": "color/terra/500"
+      }
+     },
+     "description": "The one interactive colour: primary buttons, selected states, the active tab and the range amount.",
+     "codeSyntax": "--color-accent-default"
+    },
+    {
+     "name": "color/accent/hover",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/pine/600"
+      },
+      "Calm dark": {
+       "alias": "color/pine/250"
+      },
+      "Warm": {
+       "alias": "color/terra/600"
+      }
+     },
+     "description": "Hover state of accent/default.",
+     "codeSyntax": "--color-accent-hover"
+    },
+    {
+     "name": "color/accent/pressed",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/pine/700"
+      },
+      "Calm dark": {
+       "alias": "color/pine/100"
+      },
+      "Warm": {
+       "alias": "color/terra/700"
+      }
+     },
+     "description": "Pressed state of accent/default.",
+     "codeSyntax": "--color-accent-pressed"
+    },
+    {
+     "name": "color/accent/subtle",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/pine/50"
+      },
+      "Calm dark": {
+       "alias": "color/pine/900"
+      },
+      "Warm": {
+       "alias": "color/terra/50"
+      }
+     },
+     "description": "Selected backgrounds and the active tab indicator.",
+     "codeSyntax": "--color-accent-subtle"
+    },
+    {
+     "name": "color/accent/text",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/pine/600"
+      },
+      "Calm dark": {
+       "alias": "color/pine/250"
+      },
+      "Warm": {
+       "alias": "color/terra/600"
+      }
+     },
+     "description": "Links and tertiary buttons on canvas or surface.",
+     "codeSyntax": "--color-accent-text"
+    },
+    {
+     "name": "color/accent/on",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/stone/0"
+      },
+      "Calm dark": {
+       "alias": "color/pine/950"
+      },
+      "Warm": {
+       "alias": "color/stone/0"
+      }
+     },
+     "description": "Text and icons on accent/default, hover and pressed.",
+     "codeSyntax": "--color-accent-on"
+    },
+    {
+     "name": "color/status/good",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/pine/600"
+      },
+      "Calm dark": {
+       "alias": "color/pine/250"
+      },
+      "Warm": {
+       "alias": "color/leaf/700"
+      }
+     },
+     "description": "In range and done. Use with words or an icon, never colour alone.",
+     "codeSyntax": "--color-status-good"
+    },
+    {
+     "name": "color/status/good-subtle",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/pine/50"
+      },
+      "Calm dark": {
+       "alias": "color/pine/900"
+      },
+      "Warm": {
+       "alias": "color/leaf/50"
+      }
+     },
+     "description": "Background for good messages and badges.",
+     "codeSyntax": "--color-status-good-subtle"
+    },
+    {
+     "name": "color/status/attention",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/ochre/700"
+      },
+      "Calm dark": {
+       "alias": "color/ochre/300"
+      },
+      "Warm": {
+       "alias": "color/sun/700"
+      }
+     },
+     "description": "Gentle nudges, such as being below a range. Not an error.",
+     "codeSyntax": "--color-status-attention"
+    },
+    {
+     "name": "color/status/attention-subtle",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/ochre/50"
+      },
+      "Calm dark": {
+       "alias": "color/ochre/900"
+      },
+      "Warm": {
+       "alias": "color/sun/50"
+      }
+     },
+     "description": "Background for attention messages and badges.",
+     "codeSyntax": "--color-status-attention-subtle"
+    },
+    {
+     "name": "color/status/info",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/slate/700"
+      },
+      "Calm dark": {
+       "alias": "color/slate/300"
+      },
+      "Warm": {
+       "alias": "color/sky/700"
+      }
+     },
+     "description": "Explanations and neutral notes, including going over a range.",
+     "codeSyntax": "--color-status-info"
+    },
+    {
+     "name": "color/status/info-subtle",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/slate/50"
+      },
+      "Calm dark": {
+       "alias": "color/slate/900"
+      },
+      "Warm": {
+       "alias": "color/sky/50"
+      }
+     },
+     "description": "Background for info messages and badges.",
+     "codeSyntax": "--color-status-info-subtle"
+    },
+    {
+     "name": "color/status/error",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/brick/700"
+      },
+      "Calm dark": {
+       "alias": "color/brick/300"
+      },
+      "Warm": {
+       "alias": "color/coral/700"
+      }
+     },
+     "description": "Real input errors only. Never for eating more or less than planned.",
+     "codeSyntax": "--color-status-error"
+    },
+    {
+     "name": "color/status/error-subtle",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/brick/50"
+      },
+      "Calm dark": {
+       "alias": "color/brick/900"
+      },
+      "Warm": {
+       "alias": "color/coral/50"
+      }
+     },
+     "description": "Background for error messages.",
+     "codeSyntax": "--color-status-error-subtle"
+    },
+    {
+     "name": "color/mode/wellness",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/dusk/700"
+      },
+      "Calm dark": {
+       "alias": "color/dusk/300"
+      },
+      "Warm": {
+       "alias": "color/berry/700"
+      }
+     },
+     "description": "Wellness mode badge and icon.",
+     "codeSyntax": "--color-mode-wellness"
+    },
+    {
+     "name": "color/mode/wellness-subtle",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/dusk/50"
+      },
+      "Calm dark": {
+       "alias": "color/dusk/900"
+      },
+      "Warm": {
+       "alias": "color/berry/50"
+      }
+     },
+     "description": "Background for the Wellness mode badge and icon tile.",
+     "codeSyntax": "--color-mode-wellness-subtle"
+    },
+    {
+     "name": "color/mode/athlete",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/clay/700"
+      },
+      "Calm dark": {
+       "alias": "color/clay/300"
+      },
+      "Warm": {
+       "alias": "color/terra/600"
+      }
+     },
+     "description": "Athlete mode badge and icon.",
+     "codeSyntax": "--color-mode-athlete"
+    },
+    {
+     "name": "color/mode/athlete-subtle",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/clay/50"
+      },
+      "Calm dark": {
+       "alias": "color/clay/900"
+      },
+      "Warm": {
+       "alias": "color/terra/50"
+      }
+     },
+     "description": "Background for the Athlete mode badge and icon tile.",
+     "codeSyntax": "--color-mode-athlete-subtle"
+    },
+    {
+     "name": "color/macro/protein",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/slate/700"
+      },
+      "Calm dark": {
+       "alias": "color/slate/300"
+      },
+      "Warm": {
+       "alias": "color/sky/700"
+      }
+     },
+     "description": "Protein in bars and charts, always with a text label.",
+     "codeSyntax": "--color-macro-protein"
+    },
+    {
+     "name": "color/macro/carbs",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/ochre/700"
+      },
+      "Calm dark": {
+       "alias": "color/ochre/300"
+      },
+      "Warm": {
+       "alias": "color/sun/700"
+      }
+     },
+     "description": "Carbohydrates in bars and charts, always with a text label.",
+     "codeSyntax": "--color-macro-carbs"
+    },
+    {
+     "name": "color/macro/fat",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/dusk/700"
+      },
+      "Calm dark": {
+       "alias": "color/dusk/300"
+      },
+      "Warm": {
+       "alias": "color/berry/700"
+      }
+     },
+     "description": "Fat in bars and charts, always with a text label.",
+     "codeSyntax": "--color-macro-fat"
+    },
+    {
+     "name": "color/macro/fibre",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/pine/600"
+      },
+      "Calm dark": {
+       "alias": "color/pine/250"
+      },
+      "Warm": {
+       "alias": "color/leaf/700"
+      }
+     },
+     "description": "Fibre in bars and charts, always with a text label.",
+     "codeSyntax": "--color-macro-fibre"
+    },
+    {
+     "name": "color/focus/ring",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/slate/700"
+      },
+      "Calm dark": {
+       "alias": "color/slate/300"
+      },
+      "Warm": {
+       "alias": "color/sky/700"
+      }
+     },
+     "description": "Keyboard focus ring, 2 px outside the control. Passes 3:1 on canvas and surface.",
+     "codeSyntax": "--color-focus-ring"
+    },
+    {
+     "name": "color/appearance/light-dot",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/accent/default"
+      },
+      "Calm dark": "#00000000",
+      "Warm": "#00000000"
+     },
+     "description": "Appearance picker, Calm light card dot: on in its own theme, off in the others. Only for the Theme option component.",
+     "codeSyntax": "--color-appearance-light-dot"
+    },
+    {
+     "name": "color/appearance/light-border",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/accent/default"
+      },
+      "Calm dark": {
+       "alias": "color/border/subtle"
+      },
+      "Warm": {
+       "alias": "color/border/subtle"
+      }
+     },
+     "description": "Appearance picker, Calm light card border: on in its own theme, off in the others. Only for the Theme option component.",
+     "codeSyntax": "--color-appearance-light-border"
+    },
+    {
+     "name": "color/appearance/light-bg",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/accent/subtle"
+      },
+      "Calm dark": {
+       "alias": "color/bg/surface"
+      },
+      "Warm": {
+       "alias": "color/bg/surface"
+      }
+     },
+     "description": "Appearance picker, Calm light card bg: on in its own theme, off in the others. Only for the Theme option component.",
+     "codeSyntax": "--color-appearance-light-bg"
+    },
+    {
+     "name": "color/appearance/light-ring",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/accent/default"
+      },
+      "Calm dark": {
+       "alias": "color/border/strong"
+      },
+      "Warm": {
+       "alias": "color/border/strong"
+      }
+     },
+     "description": "Appearance picker, Calm light card ring: on in its own theme, off in the others. Only for the Theme option component.",
+     "codeSyntax": "--color-appearance-light-ring"
+    },
+    {
+     "name": "color/appearance/dark-dot",
+     "type": "COLOR",
+     "values": {
+      "Calm light": "#00000000",
+      "Calm dark": {
+       "alias": "color/accent/default"
+      },
+      "Warm": "#00000000"
+     },
+     "description": "Appearance picker, Calm dark card dot: on in its own theme, off in the others. Only for the Theme option component.",
+     "codeSyntax": "--color-appearance-dark-dot"
+    },
+    {
+     "name": "color/appearance/dark-border",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/border/subtle"
+      },
+      "Calm dark": {
+       "alias": "color/accent/default"
+      },
+      "Warm": {
+       "alias": "color/border/subtle"
+      }
+     },
+     "description": "Appearance picker, Calm dark card border: on in its own theme, off in the others. Only for the Theme option component.",
+     "codeSyntax": "--color-appearance-dark-border"
+    },
+    {
+     "name": "color/appearance/dark-bg",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/bg/surface"
+      },
+      "Calm dark": {
+       "alias": "color/accent/subtle"
+      },
+      "Warm": {
+       "alias": "color/bg/surface"
+      }
+     },
+     "description": "Appearance picker, Calm dark card bg: on in its own theme, off in the others. Only for the Theme option component.",
+     "codeSyntax": "--color-appearance-dark-bg"
+    },
+    {
+     "name": "color/appearance/dark-ring",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/border/strong"
+      },
+      "Calm dark": {
+       "alias": "color/accent/default"
+      },
+      "Warm": {
+       "alias": "color/border/strong"
+      }
+     },
+     "description": "Appearance picker, Calm dark card ring: on in its own theme, off in the others. Only for the Theme option component.",
+     "codeSyntax": "--color-appearance-dark-ring"
+    },
+    {
+     "name": "color/appearance/warm-dot",
+     "type": "COLOR",
+     "values": {
+      "Calm light": "#00000000",
+      "Calm dark": "#00000000",
+      "Warm": {
+       "alias": "color/accent/default"
+      }
+     },
+     "description": "Appearance picker, Warm card dot: on in its own theme, off in the others. Only for the Theme option component.",
+     "codeSyntax": "--color-appearance-warm-dot"
+    },
+    {
+     "name": "color/appearance/warm-border",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/border/subtle"
+      },
+      "Calm dark": {
+       "alias": "color/border/subtle"
+      },
+      "Warm": {
+       "alias": "color/accent/default"
+      }
+     },
+     "description": "Appearance picker, Warm card border: on in its own theme, off in the others. Only for the Theme option component.",
+     "codeSyntax": "--color-appearance-warm-border"
+    },
+    {
+     "name": "color/appearance/warm-bg",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/bg/surface"
+      },
+      "Calm dark": {
+       "alias": "color/bg/surface"
+      },
+      "Warm": {
+       "alias": "color/accent/subtle"
+      }
+     },
+     "description": "Appearance picker, Warm card bg: on in its own theme, off in the others. Only for the Theme option component.",
+     "codeSyntax": "--color-appearance-warm-bg"
+    },
+    {
+     "name": "color/appearance/warm-ring",
+     "type": "COLOR",
+     "values": {
+      "Calm light": {
+       "alias": "color/border/strong"
+      },
+      "Calm dark": {
+       "alias": "color/border/strong"
+      },
+      "Warm": {
+       "alias": "color/accent/default"
+      }
+     },
+     "description": "Appearance picker, Warm card ring: on in its own theme, off in the others. Only for the Theme option component.",
+     "codeSyntax": "--color-appearance-warm-ring"
+    }
+   ],
+   "scopes": null,
+   "cssPrefix": ""
+  }
+ ],
+ "text": [
+  {
+   "name": "2.0/Display",
+   "fontFamily": "Newsreader",
+   "fontWeight": 500,
+   "fontSize": 34,
+   "lineHeight": 40,
+   "letterSpacingPercent": -0.5,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/serif",
+    "fontWeight": "font/weight/medium",
+    "fontSize": "font/size/34",
+    "lineHeight": "font/line-height/40"
+   },
+   "description": "Use once per tab root for the screen greeting or title, such as Good afternoon."
+  },
+  {
+   "name": "2.0/Title",
+   "fontFamily": "Newsreader",
+   "fontWeight": 500,
+   "fontSize": 28,
+   "lineHeight": 34,
+   "letterSpacingPercent": -0.3,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/serif",
+    "fontWeight": "font/weight/medium",
+    "fontSize": "font/size/28",
+    "lineHeight": "font/line-height/34"
+   },
+   "description": "Use for the main heading of a screen, below the top bar."
+  },
+  {
+   "name": "2.0/Heading",
+   "fontFamily": "Newsreader",
+   "fontWeight": 500,
+   "fontSize": 22,
+   "lineHeight": 28,
+   "letterSpacingPercent": 0,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/serif",
+    "fontWeight": "font/weight/medium",
+    "fontSize": "font/size/22",
+    "lineHeight": "font/line-height/28"
+   },
+   "description": "Use for card titles that lead a story, such as a mode name or a week."
+  },
+  {
+   "name": "2.0/Subheading",
+   "fontFamily": "Inter",
+   "fontWeight": 600,
+   "fontSize": 17,
+   "lineHeight": 24,
+   "letterSpacingPercent": -0.2,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/sans",
+    "fontWeight": "font/weight/semibold",
+    "fontSize": "font/size/17",
+    "lineHeight": "font/line-height/24"
+   },
+   "description": "Use for section headings and card titles."
+  },
+  {
+   "name": "2.0/Body",
+   "fontFamily": "Inter",
+   "fontWeight": 400,
+   "fontSize": 16,
+   "lineHeight": 24,
+   "letterSpacingPercent": 0,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/sans",
+    "fontWeight": "font/weight/regular",
+    "fontSize": "font/size/16",
+    "lineHeight": "font/line-height/24"
+   },
+   "description": "Use for running text. The default for any paragraph."
+  },
+  {
+   "name": "2.0/Body strong",
+   "fontFamily": "Inter",
+   "fontWeight": 600,
+   "fontSize": 16,
+   "lineHeight": 24,
+   "letterSpacingPercent": 0,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/sans",
+    "fontWeight": "font/weight/semibold",
+    "fontSize": "font/size/16",
+    "lineHeight": "font/line-height/24"
+   },
+   "description": "Use for list titles and emphasised lines in body text."
+  },
+  {
+   "name": "2.0/Body small",
+   "fontFamily": "Inter",
+   "fontWeight": 400,
+   "fontSize": 14,
+   "lineHeight": 20,
+   "letterSpacingPercent": 0,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/sans",
+    "fontWeight": "font/weight/regular",
+    "fontSize": "font/size/14",
+    "lineHeight": "font/line-height/20"
+   },
+   "description": "Use for supporting text in cards and lists."
+  },
+  {
+   "name": "2.0/Label",
+   "fontFamily": "Inter",
+   "fontWeight": 500,
+   "fontSize": 14,
+   "lineHeight": 20,
+   "letterSpacingPercent": 0,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/sans",
+    "fontWeight": "font/weight/medium",
+    "fontSize": "font/size/14",
+    "lineHeight": "font/line-height/20"
+   },
+   "description": "Use for form labels, chips and segmented controls."
+  },
+  {
+   "name": "2.0/Caption",
+   "fontFamily": "Inter",
+   "fontWeight": 400,
+   "fontSize": 13,
+   "lineHeight": 18,
+   "letterSpacingPercent": 0,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/sans",
+    "fontWeight": "font/weight/regular",
+    "fontSize": "font/size/13",
+    "lineHeight": "font/line-height/18"
+   },
+   "description": "Use for hints, helper text and metadata."
+  },
+  {
+   "name": "2.0/Caption strong",
+   "fontFamily": "Inter",
+   "fontWeight": 600,
+   "fontSize": 13,
+   "lineHeight": 18,
+   "letterSpacingPercent": 0,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/sans",
+    "fontWeight": "font/weight/semibold",
+    "fontSize": "font/size/13",
+    "lineHeight": "font/line-height/18"
+   },
+   "description": "Use for small status text, such as step counters and badges."
+  },
+  {
+   "name": "2.0/Overline",
+   "fontFamily": "Inter",
+   "fontWeight": 600,
+   "fontSize": 12,
+   "lineHeight": 16,
+   "letterSpacingPercent": 4,
+   "textCase": "UPPER",
+   "bind": {
+    "fontFamily": "font/family/sans",
+    "fontWeight": "font/weight/semibold",
+    "fontSize": "font/size/12",
+    "lineHeight": "font/line-height/16"
+   },
+   "description": "Use for short uppercase labels above a group, such as Input and Rule. Avoid for more than two words."
+  },
+  {
+   "name": "2.0/Number L",
+   "fontFamily": "Inter",
+   "fontWeight": 600,
+   "fontSize": 32,
+   "lineHeight": 36,
+   "letterSpacingPercent": -1,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/sans",
+    "fontWeight": "font/weight/semibold",
+    "fontSize": "font/size/32",
+    "lineHeight": "font/line-height/36"
+   },
+   "description": "Use for a single headline number."
+  },
+  {
+   "name": "2.0/Number M",
+   "fontFamily": "Inter",
+   "fontWeight": 600,
+   "fontSize": 20,
+   "lineHeight": 24,
+   "letterSpacingPercent": -0.5,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/sans",
+    "fontWeight": "font/weight/semibold",
+    "fontSize": "font/size/20",
+    "lineHeight": "font/line-height/24"
+   },
+   "description": "Use for numbers in stat tiles and range bars."
+  },
+  {
+   "name": "2.0/Button",
+   "fontFamily": "Inter",
+   "fontWeight": 600,
+   "fontSize": 16,
+   "lineHeight": 20,
+   "letterSpacingPercent": 0,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/sans",
+    "fontWeight": "font/weight/semibold",
+    "fontSize": "font/size/16",
+    "lineHeight": "font/line-height/20"
+   },
+   "description": "Use for button labels only."
+  },
+  {
+   "name": "2.0/Tab",
+   "fontFamily": "Inter",
+   "fontWeight": 500,
+   "fontSize": 12,
+   "lineHeight": 16,
+   "letterSpacingPercent": 0,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/sans",
+    "fontWeight": "font/weight/medium",
+    "fontSize": "font/size/12",
+    "lineHeight": "font/line-height/16"
+   },
+   "description": "Use for tab bar labels only."
+  }
+ ]
+}

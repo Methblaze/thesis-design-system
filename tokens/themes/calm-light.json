@@ -1,0 +1,218 @@
+{
+  "color": {
+    "bg": {
+      "canvas": {
+        "$type": "color",
+        "$value": "{color.stone.25}"
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "{color.stone.0}"
+      },
+      "surface-raised": {
+        "$type": "color",
+        "$value": "{color.stone.0}"
+      },
+      "sunken": {
+        "$type": "color",
+        "$value": "{color.stone.50}"
+      },
+      "inverse": {
+        "$type": "color",
+        "$value": "{color.stone.900}"
+      },
+      "feature": {
+        "$type": "color",
+        "$value": "{color.pine.50}"
+      }
+    },
+    "border": {
+      "subtle": {
+        "$type": "color",
+        "$value": "{color.stone.100}"
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{color.stone.200}"
+      }
+    },
+    "text": {
+      "primary": {
+        "$type": "color",
+        "$value": "{color.stone.900}"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{color.stone.600}"
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": "{color.stone.500}"
+      },
+      "inverse": {
+        "$type": "color",
+        "$value": "{color.stone.0}"
+      },
+      "on-feature": {
+        "$type": "color",
+        "$value": "{color.stone.900}"
+      },
+      "on-feature-muted": {
+        "$type": "color",
+        "$value": "{color.stone.600}"
+      }
+    },
+    "accent": {
+      "default": {
+        "$type": "color",
+        "$value": "{color.pine.500}"
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{color.pine.600}"
+      },
+      "pressed": {
+        "$type": "color",
+        "$value": "{color.pine.700}"
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{color.pine.50}"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{color.pine.600}"
+      },
+      "on": {
+        "$type": "color",
+        "$value": "{color.stone.0}"
+      }
+    },
+    "status": {
+      "good": {
+        "$type": "color",
+        "$value": "{color.pine.600}"
+      },
+      "good-subtle": {
+        "$type": "color",
+        "$value": "{color.pine.50}"
+      },
+      "attention": {
+        "$type": "color",
+        "$value": "{color.ochre.700}"
+      },
+      "attention-subtle": {
+        "$type": "color",
+        "$value": "{color.ochre.50}"
+      },
+      "info": {
+        "$type": "color",
+        "$value": "{color.slate.700}"
+      },
+      "info-subtle": {
+        "$type": "color",
+        "$value": "{color.slate.50}"
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{color.brick.700}"
+      },
+      "error-subtle": {
+        "$type": "color",
+        "$value": "{color.brick.50}"
+      }
+    },
+    "mode": {
+      "wellness": {
+        "$type": "color",
+        "$value": "{color.dusk.700}"
+      },
+      "wellness-subtle": {
+        "$type": "color",
+        "$value": "{color.dusk.50}"
+      },
+      "athlete": {
+        "$type": "color",
+        "$value": "{color.clay.700}"
+      },
+      "athlete-subtle": {
+        "$type": "color",
+        "$value": "{color.clay.50}"
+      }
+    },
+    "macro": {
+      "protein": {
+        "$type": "color",
+        "$value": "{color.slate.700}"
+      },
+      "carbs": {
+        "$type": "color",
+        "$value": "{color.ochre.700}"
+      },
+      "fat": {
+        "$type": "color",
+        "$value": "{color.dusk.700}"
+      },
+      "fibre": {
+        "$type": "color",
+        "$value": "{color.pine.600}"
+      }
+    },
+    "focus": {
+      "ring": {
+        "$type": "color",
+        "$value": "{color.slate.700}"
+      }
+    },
+    "appearance": {
+      "light-dot": {
+        "$type": "color",
+        "$value": "{color.accent.default}"
+      },
+      "light-border": {
+        "$type": "color",
+        "$value": "{color.accent.default}"
+      },
+      "light-bg": {
+        "$type": "color",
+        "$value": "{color.accent.subtle}"
+      },
+      "light-ring": {
+        "$type": "color",
+        "$value": "{color.accent.default}"
+      },
+      "dark-dot": {
+        "$type": "color",
+        "$value": "#00000000"
+      },
+      "dark-border": {
+        "$type": "color",
+        "$value": "{color.border.subtle}"
+      },
+      "dark-bg": {
+        "$type": "color",
+        "$value": "{color.bg.surface}"
+      },
+      "dark-ring": {
+        "$type": "color",
+        "$value": "{color.border.strong}"
+      },
+      "warm-dot": {
+        "$type": "color",
+        "$value": "#00000000"
+      },
+      "warm-border": {
+        "$type": "color",
+        "$value": "{color.border.subtle}"
+      },
+      "warm-bg": {
+        "$type": "color",
+        "$value": "{color.bg.surface}"
+      },
+      "warm-ring": {
+        "$type": "color",
+        "$value": "{color.border.strong}"
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "outputs": [
+    "css",
+    "js",
+    "tailwind",
+    "tokens-studio",
+    "figma",
+    "preview"
+  ],
+  "themeOrder": [
+    "calm-light",
+    "calm-dark",
+    "warm"
+  ],
+  "themeNames": {
+    "calm-light": "Calm light",
+    "calm-dark": "Calm dark",
+    "warm": "Warm"
+  },
+  "tailwind": {
+    "colors": "color",
+    "semantic": true,
+    "spacing": "size.space",
+    "radius": "size.radius",
+    "fontFamily": "font.family"
+  },
+  "figma": {
+    "fileKey": "fo6dQ2X8bGhxifuz567KjX",
+    "collections": [
+      {
+        "name": "2.0 · Primitives · Colour",
+        "source": "base",
+        "groups": [
+          "color"
+        ],
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "name": "2.0 · Primitives · Size",
+        "source": "base",
+        "groups": [
+          "size"
+        ],
+        "modes": [
+          "Default"
+        ]
+      },
+      {
+        "name": "2.0 · Primitives · Type",
+        "source": "base",
+        "groups": [
+          "font.family",
+          "font.weight",
+          "font.size",
+          "font.line-height"
+        ],
+        "modes": [
+          "Default"
+        ]
+      },
+      {
+        "name": "2.0 · Theme",
+        "source": "themes"
+      }
+    ],
+    "typography": "typography",
+    "textStylePrefix": "2.0/",
+    "renames": {
+      "collections": {
+        "2.0 · Palette": "2.0 · Primitives · Colour",
+        "2.0 · Size": "2.0 · Primitives · Size"
+      },
+      "variablePrefix": {
+        "2.0 · Primitives · Colour": "color/",
+        "2.0 · Primitives · Size": "size/",
+        "2.0 · Theme": "color/"
+      }
+    }
+  },
+  "preview": {
+    "title": "Thesis 2.0 tokens",
+    "lead": "Calm light, Calm dark and Warm and colourful, from one source.",
+    "fontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500&display=swap",
+    "bodyFont": "Inter, system-ui, sans-serif"
+  }
+}
