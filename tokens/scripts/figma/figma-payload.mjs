@@ -7,7 +7,9 @@ const [, , dir, which] = process.argv;
 const fig = JSON.parse(readFileSync(join(dir, "build/figma.json"), "utf8"));
 const config = JSON.parse(readFileSync(join(dir, "config.json"), "utf8"));
 const renames = config.figma.renames || {};
-if (which === "text") {
+if (which === "effects") {
+  console.log(JSON.stringify({ e: fig.effects || [] }));
+} else if (which === "text") {
   const d = [...new Set(fig.text.map((t) => t.description || ""))];
   const out = fig.text.map((t) => [t.name, t.fontFamily, t.fontWeight, t.fontSize, t.lineHeight, t.letterSpacingPercent, t.textCase, t.bind, d.indexOf(t.description || "")]);
   console.log(JSON.stringify({ d, t: out }));

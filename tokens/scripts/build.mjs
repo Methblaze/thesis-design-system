@@ -179,7 +179,8 @@ if (config.outputs.includes("figma")) {
         const v = t.$value;
         const m = typeof v === "string" && v.match(aliasRe);
         const ftype = t.$type === "color" ? "COLOR" : t.$type === "fontFamily" ? "STRING" : "FLOAT";
-        const raw = t.$type === "dimension" ? parseFloat(v) : t.$type === "fontFamily" ? (Array.isArray(v) ? v[0] : v) : v;
+        const fam = Array.isArray(v) ? v[0] : v;
+        const raw = t.$type === "dimension" ? parseFloat(v) : t.$type === "fontFamily" ? (fc.fontMap?.[fam] || fam) : v;
         vars.push({ name: figPath(p, c.strip), type: ftype, values: { [c.modes[0]]: m ? { alias: figPath(m[1], c.aliasStrip?.[m[1].split(".")[0]] ?? null) } : raw }, description: describe(p, t, base), codeSyntax: cssName(p) });
       }
     } else {
@@ -201,7 +202,8 @@ if (config.outputs.includes("figma")) {
   const rb = resolvedBase();
   const text = Object.entries(rb).filter(([p]) => p.startsWith(fc.typography + ".")).map(([p, v]) => {
     const t = baseFlat[p];
-    const fam = Array.isArray(v.fontFamily) ? v.fontFamily[0] : v.fontFamily;
+    const fam0 = Array.isArray(v.fontFamily) ? v.fontFamily[0] : v.fontFamily;
+    const fam = fc.fontMap?.[fam0] || fam0;
     const ls = String(v.letterSpacing ?? "0");
     return {
       name: fc.textStylePrefix + (t.$extensions?.figma?.name || p.slice(fc.typography.length + 1).replace(/\./g, "/")),
@@ -216,7 +218,12 @@ if (config.outputs.includes("figma")) {
       description: describe(p, t, base),
     };
   });
-  writeFileSync(join(out, "figma.json"), JSON.stringify({ collections, text }, null, 1) + "\n");
+  const effects = Object.entries(baseFlat).filter(([, t]) => t.$type === "shadow").map(([p, t]) => ({
+    name: (fc.effectStylePrefix || "") + p.split(".").slice(1).join("/"),
+    description: describe(p, t, base),
+    layers: (Array.isArray(t.$value) ? t.$value : [t.$value]).map((s) => ({ inset: !!s.inset, x: parseFloat(s.offsetX), y: parseFloat(s.offsetY), blur: parseFloat(s.blur), spread: parseFloat(s.spread || 0), color: s.color })),
+  }));
+  writeFileSync(join(out, "figma.json"), JSON.stringify({ collections, text, effects }, null, 1) + "\n");
   written.push("build/figma.json");
 }
 
