@@ -80,9 +80,54 @@
     }
   },
   "preview": {
-    "title": "Thesis 2.0 tokens",
-    "lead": "Calm light, Calm dark and Warm and colourful, from one source.",
+    "title": "Thesis 2.0 design system",
+    "lead": "The tokens behind the 2.0 redesign of my thesis prototype: Calm light and Calm dark by default, Warm and colourful as a choice, from one source.",
     "fontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500&display=swap",
-    "bodyFont": "Inter, system-ui, sans-serif"
+    "bodyFont": "Inter, system-ui, sans-serif",
+    "intro": "For the 2.0 redesign I wrote the design system as tokens first, so all three themes, the Figma variables and the text styles come from one source and every pair is checked for contrast.",
+    "headingFont": "Newsreader, Georgia, serif",
+    "links": [
+      {
+        "label": "Open in Figma",
+        "href": "https://www.figma.com/design/fo6dQ2X8bGhxifuz567KjX/Wireframe-sketching?node-id=476-472"
+      },
+      {
+        "label": "Try prototype 2.0",
+        "href": "https://www.figma.com/proto/fo6dQ2X8bGhxifuz567KjX/Wireframe-sketching?node-id=483-350&starting-point-node-id=483%3A350&page-id=482%3A349&scaling=scale-down&content-scaling=responsive"
+      },
+      {
+        "label": "Back to the case",
+        "href": "/work/nutrition-tracking-redesign"
+      }
+    ],
+    "components": [
+      {
+        "name": "Actions",
+        "use": "Button, Icon button and Why link, with default, pressed, focus and disabled states."
+      },
+      {
+        "name": "Forms",
+        "use": "Text field, Choice card, Chip, Toggle, Segmented control and Slider, with error states where input can fail."
+      },
+      {
+        "name": "Feedback",
+        "use": "Badge, Inline message and Step progress."
+      },
+      {
+        "name": "Data",
+        "use": "Stat tile and Range bar, for intake against a range rather than a single target."
+      },
+      {
+        "name": "Navigation and overlays",
+        "use": "Top bar, Tab bar and Bottom sheet."
+      },
+      {
+        "name": "Settings",
+        "use": "Theme option, the picker that switches between the three themes."
+      }
+    ],
+    "publish": [
+      "../portfoliokjaer/public/design-systems/thesis"
+    ]
   }
 }

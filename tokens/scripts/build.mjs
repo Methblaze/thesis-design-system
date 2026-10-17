@@ -228,28 +228,36 @@ if (config.outputs.includes("figma")) {
 }
 
 // ---- preview ------------------------------------------------------------------
-// One self-contained page that shows every token, so a change can be seen before
-// it reaches a screen: a theme switch, semantic and primitive colours, the type
-// scale, spacing, radius and the contrast pairs from checks.json.
+// One self-contained design system page that shows every token, so a change can be
+// seen before it reaches a screen and the system can be presented: how it works,
+// links (Figma, source), the components, a theme switch, semantic and primitive
+// colours, type, spacing, radius, shadows and the contrast pairs from checks.json.
+// config.preview.publish lists folders (relative to the repo root) that get a copy
+// as index.html, with tokens.css and tokens-studio.json next to it for download.
 if (config.outputs.includes("preview")) {
   const css = readFileSync(join(out, "tokens.css"), "utf8");
   const pv = config.preview || {};
   const themeNames = Object.keys(themes);
-  const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
-  const semantic = Object.keys(flatten(themes[themeNames[0]]));
+  const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+  const firstTheme = flatten(themes[themeNames[0]]);
+  const semantic = Object.keys(firstTheme);
   const prim = Object.entries(baseFlat).filter(([, t]) => t.$type === "color").map(([p]) => p);
   const typo = Object.entries(baseFlat).filter(([, t]) => t.$type === "typography");
   const space = Object.entries(baseFlat).filter(([p, t]) => t.$type === "dimension" && /(^|\.)space\./.test(p));
   const radius = Object.entries(baseFlat).filter(([p, t]) => t.$type === "dimension" && /(^|\.)radius\./.test(p));
+  const shadows = Object.entries(baseFlat).filter(([, t]) => t.$type === "shadow");
   const v = (p) => `var(${cssName(p)})`;
   const sem = (n) => semantic.find((p) => p.endsWith(n)) || null;
   const bg = sem("bg.canvas") || sem("bg.default") || semantic[0];
   const surface = sem("bg.surface") || bg;
   const text = sem("text.primary") || semantic.find((p) => /text/.test(p));
   const muted = sem("text.secondary") || text;
-  const border = sem("border.subtle") || semantic.find((p) => /border|line/.test(p)) || text;
+  const border = sem("border.subtle") || sem("bg.raised") || semantic.find((p) => /border|line/.test(p)) || text;
+  const accent = sem("accent.default") || sem("accent.primary") || text;
+  const onAccent = sem("text.on-accent") || bg;
+  const headFont = pv.headingFont || pv.bodyFont || "system-ui, sans-serif";
   // contrast table, measured per theme at build time
-  let contrastRows = "";
+  let contrastRows = "", pairCount = 0, lowest = Infinity;
   if (existsSync(join(root, "checks.json"))) {
     const hex2 = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16) / 255);
     const lum = (h) => { const [r, g, b] = hex2(h).map((x) => (x <= 0.03928 ? x / 12.92 : Math.pow((x + 0.055) / 1.055, 2.4))); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
@@ -258,36 +266,64 @@ if (config.outputs.includes("preview")) {
     const baseRes = resolver([baseFlat]);
     const look = (n, p) => (p in rt[n] ? rt[n][p] : baseRes(p));
     for (const [fg, bgp, min] of read("checks.json").contrast) {
-      const cells = themeNames.map((n) => { const r = ratio(look(n, fg), look(n, bgp)); return `<td class="${r >= min ? "ok" : "bad"}">${r.toFixed(2)}</td>`; }).join("");
+      pairCount++;
+      const cells = themeNames.map((n) => { const r = ratio(look(n, fg), look(n, bgp)); lowest = Math.min(lowest, r); return `<td class="${r >= min ? "ok" : "bad"}">${r.toFixed(2)}</td>`; }).join("");
       contrastRows += `<tr><td><code>${esc(fg)}</code></td><td><code>${esc(bgp)}</code></td><td>${min}</td>${cells}</tr>`;
     }
   }
+  const tokenCount = Object.keys(baseFlat).length + semantic.length;
+  const figmaName = (p) => p.replace(/\./g, "/");
   const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${esc(pv.title || "Design tokens")}</title>${pv.fontsUrl ? `<link rel="stylesheet" href="${pv.fontsUrl}">` : ""}
+<title>${esc(pv.title || "Design tokens")}</title><meta name="description" content="${esc(pv.lead || "Design tokens")}">${pv.fontsUrl ? `<link rel="stylesheet" href="${pv.fontsUrl}">` : ""}
 <style>${css}
 *{box-sizing:border-box}body{margin:0;background:${v(bg)};color:${v(text)};font-family:${pv.bodyFont || "system-ui, sans-serif"};line-height:1.5}
-main{max-width:1100px;margin:0 auto;padding:32px 16px 64px}h1{font-size:32px;margin:0 0 4px}h2{font-size:20px;margin:48px 0 12px}p.lead{color:${v(muted)};margin:0 0 24px}
+main{max-width:1100px;margin:0 auto;padding:40px 16px 64px}h1,h2,h3{font-family:${headFont};line-height:1.2}h1{font-size:clamp(28px,5vw,40px);margin:0 0 8px}h2{font-size:22px;margin:56px 0 6px}h3{font-size:16px;margin:0 0 4px}
+.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:${v(muted)};margin:0 0 8px}p.lead{color:${v(muted)};margin:0 0 20px;max-width:70ch}p.sub{color:${v(muted)};margin:0 0 16px;max-width:70ch}
+a{color:inherit}.links{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 8px}.links a{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;text-decoration:none;font-weight:600;border:1px solid ${v(border)};background:${v(surface)}}.links a:first-child{background:${v(accent)};color:${v(onAccent)};border-color:transparent}.links a:focus-visible,.switch button:focus-visible{outline:3px solid currentColor;outline-offset:2px}
 .switch{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.switch button{min-height:44px;padding:0 16px;border-radius:999px;border:1px solid ${v(border)};background:${v(surface)};color:${v(text)};font:inherit;cursor:pointer}.switch button[aria-pressed=true]{outline:2px solid currentColor}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}.sw{border:1px solid ${v(border)};border-radius:12px;overflow:hidden;background:${v(surface)}}.sw i{display:block;height:56px;border-bottom:1px solid ${v(border)}}.sw div{padding:8px 10px;font-size:12px}.sw code{font-size:12px;word-break:break-all}.sw span{display:block;color:${v(muted)}}
-.type div{padding:12px 0;border-bottom:1px solid ${v(border)}}.type small{display:block;color:${v(muted)};font-family:system-ui;font-size:12px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;padding:0;margin:0;list-style:none;counter-reset:s}.steps li,.card{border:1px solid ${v(border)};border-radius:12px;background:${v(surface)};padding:16px}.steps li{counter-increment:s}.steps li::before{content:counter(s);display:inline-flex;width:28px;height:28px;border-radius:999px;align-items:center;justify-content:center;background:${v(accent)};color:${v(onAccent)};font-weight:700;font-size:14px;margin-bottom:8px}.steps p,.card p{margin:0;color:${v(muted)};font-size:14px}
+.stats{display:flex;gap:24px;flex-wrap:wrap;margin:20px 0 0}.stats div{font-size:13px;color:${v(muted)}}.stats b{display:block;font-size:24px;color:${v(text)};font-family:${headFont}}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}.sw{border:1px solid ${v(border)};border-radius:12px;overflow:hidden;background:${v(surface)}}.sw i{display:block;height:56px;border-bottom:1px solid ${v(border)}}.sw div{padding:8px 10px;font-size:12px}.sw code{font-size:12px;word-break:break-all}.sw span{display:block;color:${v(muted)}}.sw em{display:block;font-style:normal;margin-top:4px;color:${v(muted)}}
+.type div{padding:12px 0;border-bottom:1px solid ${v(border)}}.type small{display:block;color:${v(muted)};font-family:system-ui;font-size:12px;font-weight:400;letter-spacing:0;text-transform:none}
 .bar{display:flex;align-items:center;gap:12px;margin:6px 0;font-size:13px}.bar i{display:block;height:16px;background:currentColor;opacity:.6;border-radius:4px}
-table{border-collapse:collapse;width:100%;font-size:13px;background:${v(surface)};border:1px solid ${v(border)}}td,th{padding:6px 10px;border-bottom:1px solid ${v(border)};text-align:left}td.ok{color:inherit}td.bad{font-weight:700;text-decoration:underline}
+.tbl{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:13px;background:${v(surface)};border:1px solid ${v(border)}}td,th{padding:6px 10px;border-bottom:1px solid ${v(border)};text-align:left}td.ok{color:inherit}td.bad{font-weight:700;text-decoration:underline}
 .rad{display:flex;gap:16px;flex-wrap:wrap}.rad div{width:88px;height:64px;border:2px solid currentColor;display:flex;align-items:end;padding:4px;font-size:12px}
+.shadows{display:flex;gap:24px;flex-wrap:wrap}.shadows div{width:200px;min-height:88px;padding:16px;border-radius:16px;background:${v(surface)};font-size:13px}
+footer{margin-top:64px;font-size:12px;color:${v(muted)}}
 </style></head><body><main>
-<h1>${esc(pv.title || "Design tokens")}</h1><p class="lead">Generated from tokens/*.json by tokens/scripts/build.mjs. ${esc(pv.lead || "")}</p>
+<p class="eyebrow">Design system</p>
+<h1>${esc(pv.title || "Design tokens")}</h1><p class="lead">${esc(pv.lead || "")}</p>
+${pv.links?.length ? `<nav class="links" aria-label="Links">${pv.links.map((l) => `<a href="${esc(l.href)}"${/^https?:/.test(l.href) ? ' target="_blank" rel="noopener noreferrer"' : ""}>${esc(l.label)}</a>`).join("")}</nav>` : ""}
 ${themeNames.length > 1 ? `<div class="switch" role="group" aria-label="Theme">${themeNames.map((n, i) => `<button type="button" aria-pressed="${i === 0}" data-t="${n}">${esc(config.themeNames?.[n] || n)}</button>`).join("")}</div>` : ""}
-<h2>Semantic colours</h2><div class="grid">${semantic.map((p) => `<div class="sw"><i style="background:${v(p)}"></i><div><code>${esc(p)}</code><span data-v="${cssName(p)}"></span></div></div>`).join("")}</div>
-<h2>Type</h2><div class="type">${typo.map(([p, t]) => { const val = t.$value; const st = Object.entries(val).map(([k, x]) => { const prop = { fontFamily: "font-family", fontWeight: "font-weight", fontSize: "font-size", lineHeight: "line-height", letterSpacing: "letter-spacing", textCase: "text-transform" }[k]; const m = typeof x === "string" && x.match(aliasRe); return prop ? `${prop}:${m ? v(m[1]) : px(x)}` : ""; }).join(";"); return `<div style="${st}">${esc(t.$extensions?.figma?.name || p)}<small>${esc(p)}${t.$description ? " · " + esc(t.$description) : ""}</small></div>`; }).join("")}</div>
-${space.length ? `<h2>Spacing</h2>${space.map(([p, t]) => `<div class="bar"><i style="width:${v(p)}"></i><code>${esc(p)}</code> ${esc(t.$value)}</div>`).join("")}` : ""}
-${radius.length ? `<h2>Radius</h2><div class="rad">${radius.map(([p, t]) => `<div style="border-radius:${v(p)}">${esc(p.split(".").pop())}</div>`).join("")}</div>` : ""}
-${contrastRows ? `<h2>Contrast</h2><table><thead><tr><th>Foreground</th><th>Background</th><th>Min</th>${themeNames.map((n) => `<th>${esc(config.themeNames?.[n] || n)}</th>`).join("")}</tr></thead><tbody>${contrastRows}</tbody></table>` : ""}
-<h2>Primitives</h2><div class="grid">${prim.map((p) => `<div class="sw"><i style="background:${v(p)}"></i><div><code>${esc(p)}</code><span>${esc(resolver([baseFlat])(p))}</span></div></div>`).join("")}</div>
+<h2>How it works</h2><p class="sub">${esc(pv.intro || "One source of design tokens feeds both the code and Figma, and a check proves they still agree.")}</p>
+<ol class="steps"><li><h3>One source</h3><p>Every colour, size, font and shadow is written once, in the open DTCG token format, in tokens/*.json.</p></li>
+<li><h3>Code and Figma</h3><p>A build turns it into CSS variables and JavaScript for the app, and into Figma variables, text styles and effect styles for the design file.</p></li>
+<li><h3>Proved, not trusted</h3><p>A check runs on every change: names and references, WCAG contrast for every text and control pair, and no drift between Figma and the code.</p></li></ol>
+<div class="stats"><div><b>${tokenCount}</b>tokens</div><div><b>${themeNames.length}</b>${themeNames.length === 1 ? "theme" : "themes"}</div><div><b>${typo.length}</b>text styles</div>${pairCount ? `<div><b>${pairCount}</b>contrast pairs checked</div><div><b>${lowest.toFixed(2)}:1</b>lowest contrast</div>` : ""}</div>
+${pv.components?.length ? `<h2>Components</h2><p class="sub">Built in Figma on these tokens, each mirroring a component in the code.</p><div class="cards">${pv.components.map((c) => `<div class="card"><h3>${esc(c.name)}</h3><p>${esc(c.use)}</p></div>`).join("")}</div>` : ""}
+<h2>Semantic colours</h2><p class="sub">What screens use. Each one points at a primitive, so a theme only swaps the pointers.</p><div class="grid">${semantic.map((p) => { const d = describe(p, firstTheme[p], themes[themeNames[0]]); return `<div class="sw"><i style="background:${v(p)}"></i><div><code>${esc(figmaName(p))}</code><span data-v="${cssName(p)}"></span>${d ? `<em>${esc(d)}</em>` : ""}</div></div>`; }).join("")}</div>
+<h2>Type</h2><div class="type">${typo.map(([p, t]) => { const val = t.$value; const st = Object.entries(val).map(([k, x]) => { const prop = { fontFamily: "font-family", fontWeight: "font-weight", fontSize: "font-size", lineHeight: "line-height", letterSpacing: "letter-spacing", textCase: "text-transform" }[k]; const m = typeof x === "string" && x.match(aliasRe); return prop ? `${prop}:${m ? v(m[1]) : px(x)}` : ""; }).join(";"); const r = resolvedBase()[p]; return `<div style="${st}">${esc(t.$extensions?.figma?.name || p)}<small>${esc(parseFloat(r.fontSize))}/${esc(parseFloat(r.lineHeight))} · ${esc(r.fontWeight)}${t.$description ? " · " + esc(t.$description) : ""}</small></div>`; }).join("")}</div>
+${space.length ? `<h2>Spacing</h2>${space.map(([p, t]) => `<div class="bar"><i style="width:${v(p)}"></i><code>${esc(figmaName(p))}</code> ${esc(t.$value)}</div>`).join("")}` : ""}
+${radius.length ? `<h2>Radius</h2><div class="rad">${radius.map(([p, t]) => `<div style="border-radius:${v(p)}">${esc(p.split(".").pop())} · ${esc(t.$value)}</div>`).join("")}</div>` : ""}
+${shadows.length ? `<h2>Shadows</h2><div class="shadows">${shadows.map(([p, t]) => `<div style="box-shadow:${v(p)}"><code>${esc(figmaName(p))}</code>${describe(p, t, base) ? `<br>${esc(describe(p, t, base))}` : ""}</div>`).join("")}</div>` : ""}
+${contrastRows ? `<h2>Contrast</h2><p class="sub">WCAG 2.2 ratios, measured on every build. 4.5 is the minimum for text, 3 for control edges.</p><div class="tbl"><table><thead><tr><th>Foreground</th><th>Background</th><th>Min</th>${themeNames.map((n) => `<th>${esc(config.themeNames?.[n] || n)}</th>`).join("")}</tr></thead><tbody>${contrastRows}</tbody></table></div>` : ""}
+<h2>Primitives</h2><p class="sub">The raw palette. Screens never use these directly.</p><div class="grid">${prim.map((p) => `<div class="sw"><i style="background:${v(p)}"></i><div><code>${esc(figmaName(p))}</code><span>${esc(resolver([baseFlat])(p))}</span></div></div>`).join("")}</div>
+<h2>Download</h2><p class="sub"><a href="tokens.css">tokens.css</a> (CSS variables) · <a href="tokens-studio.json">tokens-studio.json</a> (DTCG, for the Tokens Studio plugin)</p>
+<footer>Generated by tokens/scripts/build.mjs from tokens/*.json. Do not edit by hand.</footer>
 </main><script>
 const fill=()=>document.querySelectorAll("[data-v]").forEach(s=>{s.textContent=getComputedStyle(document.documentElement).getPropertyValue(s.dataset.v).trim()});
 document.querySelectorAll(".switch button").forEach(b=>b.addEventListener("click",()=>{document.documentElement.dataset.theme=b.dataset.t;document.querySelectorAll(".switch button").forEach(x=>x.setAttribute("aria-pressed",x===b));fill();}));fill();
 </script></body></html>`;
   writeFileSync(join(out, "preview.html"), html);
   written.push("build/preview.html");
+  for (const dir of pv.publish || []) {
+    const target = join(root, "..", dir);
+    mkdirSync(target, { recursive: true });
+    writeFileSync(join(target, "index.html"), html);
+    for (const f of ["tokens.css", "tokens-studio.json"]) if (existsSync(join(out, f))) writeFileSync(join(target, f), readFileSync(join(out, f)));
+    written.push(dir + "/index.html");
+  }
 }
 
 console.log("tokens built:", written.join(", "));

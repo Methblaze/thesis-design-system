@@ -18,7 +18,8 @@ tokens/checks.json          WCAG pairs checked in every theme
         │                           build/tailwind.js       Tailwind theme object
         │                           build/tokens-studio.json  multi-set file for the Tokens Studio plugin
         │                           build/figma.json        input for the native Figma sync
-        │                           build/preview.html      every token on one page
+        │                           build/preview.html      the design system page, also published to
+        │                                                   portfoliokjaer/public/design-systems/thesis/
         │
         └── npm run tokens:check ─► the proof: names, types, aliases, layers, theme parity,
                                     descriptions, contrast, and drift against tokens/figma-export.json
